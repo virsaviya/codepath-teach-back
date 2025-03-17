@@ -5,10 +5,10 @@ export default function Button({ onClick, label }) {
 
   const handleMouseDown = () => setPressed(true);
   const handleMouseUp = () => setPressed(false);
-
+  const classes = pressed ? 'pressed' : '';
   return (
     <button
-      className={pressed && 'pressed'}
+      className={classes}
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       onClick={onClick}>

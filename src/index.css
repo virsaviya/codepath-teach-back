@@ -43,3 +43,10 @@ button.pressed {
   flex-direction: column;
   align-items: center;
 }
+
+.log {
+  margin-top: 8px;
+}
+.log div {
+  margin: 4px 8px;
+}

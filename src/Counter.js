@@ -2,11 +2,9 @@ import React from 'react';
 
 import Button from './Button';
 
-function Counter() {
-  const [count, setCount] = React.useState(0);
-  const increment = () => setCount(count + 1);
-  // let count = 0;
-  // const increment = () => (count = count + 1);
+function Counter({ show }) {
+  let count = 0;
+  const increment = () => (count = count + 1);
 
   return (
     <>
