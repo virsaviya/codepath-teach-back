@@ -1,6 +1,8 @@
 :root {
   --background: #2c4047;
   --primary: #02c98e;
+  --primaryDark: #00ba82;
+  --primaryXtraDark: #00a36f;
 }
 
 body {
@@ -21,10 +23,19 @@ code {
 }
 
 button {
-  border: none;
+  border: 1px solid var(--primaryDark);
   border-radius: 2px;
-  background: var(--primary);
+  background-color: var(--primary);
   padding: 4px 8px;
+}
+
+button:hover {
+  background-color: var(--primaryDark);
+  border-color: var(--primaryXtraDark);
+}
+
+button.pressed {
+  background-color: var(--primaryXtraDark);
 }
 
 .wrapper {
